@@ -20,5 +20,13 @@ Watch and recompile for changes with `site watch`
 
 ## Travis Deployment
 
-Go to GitHub.com -> Settings -> Applications -> Personal Access Tokens — > Create new token, and copy it to your clipboard
-`travis encrypt -r nix-community/2019.nixcon.org GH_TOKEN=[your token]`
+```sh
+ssh-keygen -f deploy-key
+travis encrypt-file --org -r nixcon/2019.nixcon.org deploy-key
+rm deploy-key
+git add travis-deployment
+# ...git commit & push
+```
+
+Then go to https://github.com/nixcon/2019.nixcon.org/settings/keys and add the
+`deploy-key.pub` to the deploy keys, with write access.
