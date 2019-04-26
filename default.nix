@@ -1,7 +1,7 @@
 { pkgs ? import ./nixpkgs {} }:
 
 pkgs.stdenv.mkDerivation {
-  name = "nixcon2018-website";
+  name = "nixcon-website";
 
   src = ./.;
 
