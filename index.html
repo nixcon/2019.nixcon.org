@@ -35,7 +35,7 @@
         <div class="center grey-text text-darken-2">
           <i class="fa fa-users"></i>
         </div>
-        <h5 class="center grey-text text-darken-2 header">120 people / 60 for Hackday</h5>
+        <h5 class="center grey-text text-darken-2 header">160 people / 80 for Hackday</h5>
       </div>
     </div>
 
@@ -44,7 +44,7 @@
         <div class="center grey-text text-darken-2">
           <i class="fa fa-map-marker"></i>
         </div>
-        <h5 class="center grey-text text-darken-2 header">London</h5>
+        <h5 class="center grey-text text-darken-2 header">Brno</h5>
       </div>
     </div>
 
@@ -76,31 +76,20 @@
 <a name="program" class="anchor"></a>
 <div class="container">
   <div class="col s12 m12">
-    <h3 class="header center text-darken-2">
-      <a href="https://www.youtube.com/c/NixCon/">YouTube Live stream</a>
-    </h3>
-  </div>
-
-  <div class="col s12 m12">
-    <h3 class="header center grey-text text-darken-2">Program - 25-26 October (Thurs/Fri) </h3>
+    <h3 class="header center grey-text text-darken-2">Program - 25-26 October (Fri/Saturday)</h3>
   </div>
 
   <div class="row">
-    <iframe
-      allowtransparency="true"
-      class="col s12 m12"
-      frameborder="0"
-      height="1000"
-      scrolling="no"
-      src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showCalendars=0&amp;dates=20191025%2F20191027&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=numtide.com_1d6u5f5elbodoeqi8pk6b49gtc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FLondon"
-    ></iframe>
     <div class="col s12 m12">
-      <p>
-      If the iframe doesn't appear above,
-      go to
-      <a
-        href="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showCalendars=0&amp;dates=20191025%2F20191027&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=numtide.com_1d6u5f5elbodoeqi8pk6b49gtc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FLondon">
-        Google Calendar directly</a>
+      <p class="center flow-text">
+	No content yet. If you have some interesting topic you would like to
+	present please contact us:
+	<a href="mailto:orgateam (at) nixcon.org">orgateam (at) nixcon.org</a>
+      </p>
+      <p class="center flow-text">
+	We will have plenty of space for talks and socializing. During the
+	conference days we have three rooms. On big room with enough space for
+	everyone and two smaller ones for a subset of all attendees.
       </p>
     </div>
   </div>
@@ -110,14 +99,18 @@
 <div class="container">
 
   <div class="col s12 m12">
-    <h3 class="header center grey-text text-darken-2">Hackday - 27 October (Saturday)</h3>
+    <h3 class="header center grey-text text-darken-2">Hackday - 27 October (Sunday)</h3>
   </div>
   <div class="row">
     <div class="col s12 m12">
-      <p class="center flow-text">The Hackday is a self-organizing event after the conference. It's an opportunity to network, hack on projects and ideas
-        that arose during the conference, and discuss plans for the rest of the year.</p>
-      <p class="center flow-text">The location is the same as the conference but with a different table layout, limiting the number of attendees to 60
-        people.
+      <p class="center flow-text">
+	The Hackday is a self-organizing event after the conference. It's an
+	opportunity to network, hack on projects and ideas that arose during
+	the conference, and discuss plans for the rest of the year.
+      </p>
+      <p class="center flow-text">
+        The location is the same as the conference but with just one room and a
+        different table layout, limiting the number of attendees to 80 people.
       </p>
 
     </div>
@@ -131,10 +124,11 @@
     <div class="col s12 m12">
       <h3 class="header center grey-text text-darken-2">Location</h3>
       <address class="center">
-        Coin Street Neighourhood Centre,
+	Impact Hub Brno
+	<a href="https://www.hubbrno.cz/en/">hubbrno.cz</a>
 
-        <a href="https://goo.gl/maps/eVrhRvBiCit">
-          108 Stamford St, Lambeth, London SE1 9NH
+        <a href="https://osm.org/go/0Jv3E8lMI?m=&way=339769163">
+	  Cyrilská 7, Brno 602 00, Czech Republic
         </a>
       </address>
     </div>
@@ -142,75 +136,33 @@
 
   <div class="row">
     <div class="col s12 m12">
-      <div id='map'></div>
-      <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
-<script src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
-<script src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
-<script src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
-<script src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
-      <script>
-/**
- * Boilerplate map initialization code starts below:
- */
-
-//Step 1: initialize communication with the platform
-var platform = new H.service.Platform({
-  app_id: 'WfhUdEQQNDpqga8qWGNX',
-  app_code: 'hg_W4x9btsXdjGoBb-A1yQ',
-  useHTTPS: true
-});
-var pixelRatio = window.devicePixelRatio || 1;
-var defaultLayers = platform.createDefaultLayers({
-  tileSize: pixelRatio === 1 ? 256 : 512,
-  ppi: pixelRatio === 1 ? undefined : 320
-});
-
-var mapEl = document.getElementById('map');
-mapEl.style = "height: 400px; background: grey;"
-
-//Step 2: initialize a map - this map is centered over Europe
-var map = new H.Map(document.getElementById('map'),
-  defaultLayers.normal.map,{
-  center: {
-    lat: 51.506145,
-    lng: -0.1129287
-  },
-  zoom: 15,
-  pixelRatio: pixelRatio
-});
-
-//Step 3: make the map interactive
-// MapEvents enables the event system
-// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
-var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
-
-// Create the default UI components
-var ui = H.ui.UI.createDefault(map, defaultLayers);
-
-// Add marker
-var nixconMarker = new H.map.Marker({
-  lat: 51.506145,
-  lng:-0.1129287,
-});
-map.addObject(nixconMarker);
-      </script>
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=16.619546413421634%2C49.18972740323343%2C16.621059179306034%2C49.19065296518632&amp;layer=mapnik&amp;marker=49.19019018637433%2C16.62030279636383" style="border: 1px solid black"></iframe>
     </div>
   </div>
   <div class="row">
     <div class="col s4">
-      <img class="materialboxed hoverable responsive-img center-align" src="images/venue_interior_1.jpg" alt="Venue Interior">
+	    <img class="materialboxed hoverable responsive-img center-align" src="images/venue/open-space5-600.jpg" alt="Venue Interior">
     </div>
     <div class="col s4">
-      <img class="materialboxed hoverable responsive-img center-align" src="images/venue_interior_2.jpg" alt="Venue Interior">
+	    <img class="materialboxed hoverable responsive-img center-align" src="images/venue/open-space6-600.jpg" alt="Venue Interior">
     </div>
     <div class="col s4">
-      <img class="materialboxed hoverable  responsive-img center" src="images/venue_exterior_1.jpg" alt="Venue Exterior">
+	    <img class="materialboxed hoverable  responsive-img center" src="images/venue/open-space8-600.jpg" alt="Venue Interior">
     </div>
+  </div>
+  <div class="row">
+    <div class="col s4">
+	    <img class="materialboxed hoverable  responsive-img center" src="images/venue/konferencni-mistnost02-600.jpg" alt="Venue Interior">
+    </div>
+    <div class="col s4">
+	    <img class="materialboxed hoverable  responsive-img center" src="images/venue/exterier2-600.jpg" alt="Venue Exterior">
+    </div>
+
   </div>
 
   <div class="row">
     <div class="col s4 panel">
-      <a href="https://photos.app.goo.gl/vc2iy389jqaebQ1W6">more photos...</a>
+      <a href="https://www.hubbrno.cz/en/spaces/">more impressions...</a>
     </div>
   </div>
 
@@ -231,10 +183,10 @@ map.addObject(nixconMarker);
 
   <div class="row">
     <div class="col s12 m12">
-      <p class="center flow-text">Conference - Max 150 people</p>
+      <p class="center flow-text">Conference - Max 160 people</p>
     </div>
     <div class="col s12 m12">
-      <p class="center flow-text">Hackday - Max 60 people</p>
+      <p class="center flow-text">Hackday - Max 80 people</p>
     </div>
     <div class="col s12 m12">
       <h1>TODO</h1>
@@ -289,12 +241,22 @@ map.addObject(nixconMarker);
     <h3 class="header center grey-text text-darken-2">Sponsors</h3>
   </div>
 
-
   <div class="row nixos-sponsor">
     <div class="col s12 m6">
       <div class="card">
+        <div class="card-content">
+          <span class="card-title">
+            <a href="/sponsoring.html">Become a sponsor</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--div class="row nixos-sponsor">
+    <div class="col s12 m6">
+      <div class="card">
         <div class="card-image" style="background-color: #eee;">
-          <img class="responsive-img" src="/images/numtide.png" />
+          <img class="responsive-img" src="/images/sponsors/numtide.png" />
         </div>
         <div class="card-content">
           <span class="card-title">Gold Sponsor</span>
@@ -308,7 +270,7 @@ map.addObject(nixconMarker);
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image" style="background-color: #eee;">
-          <img class="responsive-img" src="/images/tweag.svg" />
+          <img class="responsive-img" src="/images/sponsors/tweag.svg" />
         </div>
         <div class="card-content">
           <span class="card-title">Gold Sponsor</span>
@@ -321,7 +283,7 @@ map.addObject(nixconMarker);
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image" style="background-color: #212529;">
-          <img class="responsive-img" src="/images/serokell.svg" />
+          <img class="responsive-img" src="/images/sponsors/serokell.svg" />
         </div>
         <div class="card-content">
           <span class="card-title">Gold Sponsor</span>
@@ -335,7 +297,7 @@ map.addObject(nixconMarker);
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image" style="background-color: #eee;">
-          <img class="responsive-img" src="/images/Mayflower-Logo-880.png" />
+          <img class="responsive-img" src="/images/sponsors/Mayflower-Logo-880.png" />
         </div>
         <div class="card-content">
           <span class="card-title">Gold Sponsor</span>
@@ -352,7 +314,7 @@ map.addObject(nixconMarker);
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image" style="background-color: #7ccef3;">
-          <img class="responsive-img" src="/images/rai-logo.png" />
+          <img class="responsive-img" src="/images/sponsors/rai-logo.png" />
         </div>
         <div class="card-content">
           <span class="card-title">Gold Sponsor</span>
@@ -363,19 +325,10 @@ map.addObject(nixconMarker);
       </div>
     </div>
 
-    <!-- <div class="col s12 m6"> -->
-    <!--   <div class="card"> -->
-    <!--     <div class="card-content"> -->
-    <!--       <span class="card-title"> -->
-    <!--         <a href="/sponsoring.html">Become a sponsor</a> -->
-    <!--       </span> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </div> -->
 
-  </div>
+  </div -->
 
-  <div class="row">
+  <!-- div class="row">
     <div class="col s12 m12">
       <h4 class="header center grey-text text-darken-2">Silver Sponsors</h4>
     </div>
@@ -419,6 +372,6 @@ map.addObject(nixconMarker);
         <img class="responsive-img" src="/images/flying-circus.png" title="Flying Circus" />
       </a>
     </div>
-  </div>
+  </div-->
 
 </div>

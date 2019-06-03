@@ -52,12 +52,6 @@ h3 {
   width: 200px;
 }
 
-.nixos-logo:hover {
-  cursor: default;
-  transform: rotate(120deg);
-  transition: all 1s ease-in-out 0s;
-}
-
 .icon-block .fa {
   font-size: 4rem;
 }
