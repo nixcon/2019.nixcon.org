@@ -1,4 +1,4 @@
-<a href="https://travis-ci.org/nix-community/2019.nixcon.org"><img src="https://travis-ci.org/nix-community/2019.nixcon.org.svg?branch=master"></a>
+<a href="https://travis-ci.org/nixcon/2019.nixcon.org"><img src="https://travis-ci.org/nixcon/2019.nixcon.org.svg?branch=master"></a>
 
 # Website for NixCon 2019
 
