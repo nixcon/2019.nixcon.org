@@ -140,8 +140,12 @@ footer .row {
 }
 
 @media only screen and (min-width: 993px) {
-  .nixos-sponsor .card {
-    height: 350px;
+  .nixos-sponsor .m6 .card {
+    height: 410px;
+  }
+
+  .nixos-sponsor .m4 .card {
+    height: 480px;
   }
 
   .card {
@@ -150,8 +154,12 @@ footer .row {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  .nixos-sponsor .card {
-    height: 395px;
+  .nixos-sponsor .m6 .card {
+    height: 430px;
+  }
+
+  .nixos-sponsor .m4 .card {
+    height: 580px;
   }
 
   .card {
