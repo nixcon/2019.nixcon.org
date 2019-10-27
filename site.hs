@@ -2,8 +2,12 @@
 #!nix-shell -i "runhaskell -Wall -no-user-package-db"
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
-import           Hakyll
+import Data.Monoid (mappend)
+import Hakyll
+import Hakyll.Images        ( loadImage
+                            , compressJpgCompiler
+                            , scaleImageCompiler
+                            )
 
 
 --------------------------------------------------------------------------------
@@ -20,6 +24,12 @@ main = hakyll $ do
     match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
+
+    match "pictures/**" $ do
+        route   idRoute
+        compile $ loadImage
+            >>= scaleImageCompiler 1200 450
+            >>= compressJpgCompiler 90
 
     match "googlead1fe7ef91f639f7.html" $ do
         route   idRoute

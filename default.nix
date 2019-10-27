@@ -9,6 +9,7 @@ pkgs.stdenv.mkDerivation {
     glibcLocales
     (haskellPackages.ghcWithPackages (ps: with ps; [
       hakyll
+      hakyll-images
     ]))
   ];
 
